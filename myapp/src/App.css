@@ -1,0 +1,272 @@
+.nav{
+  height: 80px;
+  width: 100%;
+  background-color: rgb(248, 218, 218);
+  display: flex;
+}
+
+#logo{
+  font-size: 30px;
+  margin: auto;
+  font-weight: bold;
+  color: #f5677c;
+}
+
+a{
+  line-height: 15px;
+  padding: 30px;
+  font-size: 20px;
+  margin-left: 100px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.contain {
+  width: 100%;
+  height: 300px;
+  background-color: #f9f9f9;
+}
+
+.contain1 {
+  float: left;
+  width: 20%;
+  height: 100%;
+  margin-left: 20%;
+}
+
+.contain3 {
+  float: right;
+  width: 20%;
+  height: 100%;
+  margin-right: 20%;
+}
+
+.contain2 {
+  width: 20%;
+  float: left;
+  height: 100%;
+}
+
+.contain2 img {
+  width: 80%;
+  border-radius: 50%;
+  height: 80%;
+  margin-left: 10%;
+  margin-top: 10%;
+}
+
+.contain h1 {
+  margin-top: 10%;
+  color: rgb(61, 124, 223);
+}
+
+.contain1 p {
+  text-align: right;
+}
+
+.contain1 h1 {
+  text-align: right;
+}
+
+.features{
+  width: 100%;
+  height: 1200px;
+  background-color: #f9f9f9 ;
+  display: flex;
+  flex-direction: column;
+}
+
+.main{
+  width: 100%;
+  height: 800px;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.details{
+  flex-basis: 40%;
+  height: 150px;
+  /* border: 1px solid black; */
+  text-align: center;
+}
+
+.details h3{
+  color:#f5677c;
+  margin-bottom: 15px;
+}
+
+.details h1{
+ font-weight: bold;
+ margin-bottom: 15px;
+ font-family: 'Raleway', sans-serif;
+}
+
+.details p{
+  color: gray;
+}
+
+.features-box{
+  width: 100%;
+  height: 1000px;
+  /* border: 1px solid black; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.features-box .box1{
+  flex-basis: 30%;
+  height: 250px;
+  background-color: white;
+  margin-top: 20px;
+  box-shadow: 6px 5px 12px 1px gray;
+  transition: 2s;
+ 
+}
+
+.box1 i{
+  font-size: 22px;
+  background-color: #f5677c;
+  color: white;
+  padding: 17px;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+.box1 h2{
+  font-weight: lighter;
+  padding: 14px;
+}
+
+.box1 p{
+  font-size: 18px;
+  color: gray;
+  padding: 14px;
+  text-align: justify;
+}
+
+.trust{
+  width: 100%;
+  height: 500px;
+  margin-top: 5%;
+  /* background-color: #f5677c; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../public/images/bg.jpg);
+
+}
+
+.count{
+  width: 50%;
+  height: 200px;
+  /* border: 1px solid black; */
+}
+
+.count h2{
+  font-size: 34px;
+  text-align: center;
+  margin-bottom: 8px;
+  color: white;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+#para{
+  color: rgb(205, 223, 169);
+  text-align: center;
+  font-size: 19px;
+  margin-bottom: 20px;
+}
+
+.count1{
+  width: 100%;
+  height: 80px;
+  /* border: 1px solid black; */
+  margin-top: 50px;
+  display: flex;
+  align-items: end;
+  justify-content: space-evenly;
+}
+
+.table h1{
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 39px;
+  color: white;
+  
+}
+
+.table p{
+  font-family: 'Bacasime Antique', serif;
+  font-family: 'Josefin Sans', sans-serif;
+  text-align: center;
+  font-weight: bold;
+  color: rgb(223, 222, 221);
+}
+
+.main{
+  width: 100%;
+  height: 500px;
+  /* border: 1px solid black; */
+  margin-top: 50px;
+  background-image: linear-gradient(bisque,cadetblue);
+  display: flex;
+  justify-content: center;
+}
+
+.deteils{
+  flex-basis: 49%;
+  /* border: 1px solid black; */
+}
+.depth{
+  width: 70%;
+  height: 80%;
+  /* border: 1px solid black; */
+  margin-left: 15%;
+  margin-top: 10%;
+}
+
+.depth h1{
+  font-size: 50px;
+  font-family: 'Raleway', sans-serif;
+  margin-bottom: 10px;
+}
+
+.depth p{
+  font-size: 25px;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  text-align: justify;
+  margin-bottom: 20px;
+}
+
+.depth button{
+  font-size: 20px;
+  padding: 15px 35px;
+  border-radius: 25px;
+  transition: 1s;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+.depth button:hover{
+  padding: 10px 25px;
+}
+
+.footer{
+  width: 100%;
+  height: 300px;
+  background-color: black;
+}
+
+.footer p{
+  margin-left: 450px;
+  color: #f9f9f9;
+  line-height: 300px;
+  font-size: 20px;
+}
+
+
+

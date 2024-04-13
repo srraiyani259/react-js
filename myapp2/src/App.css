@@ -1,0 +1,327 @@
+.Navbar {
+  height: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.logo {
+  flex-basis: 10%;
+  height: 60px;
+}
+
+.logo img {
+  width: 102px;
+  height: 26px;
+  margin-top: 15px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.main-navbar {
+  height: 60px;
+  flex-basis: 40%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.main-navbar a {
+  padding-left: 20px;
+  line-height: 60px;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+nav a:hover {
+  color: #794aff;
+  transition: 0.5s;
+}
+
+.btn {
+  width: 142px;
+  height: 44px;
+  background-color: #794aff;
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.Hero {
+  width: 80%;
+  margin-left: 10%;
+  height: 650px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.Sub-Hero {
+  flex-basis: 47%;
+  height: 550px;
+}
+
+.Sub-Hero img {
+  width: 100%;
+  height: 100%;
+}
+
+.Sub-Hero button {
+  width: 142px;
+  height: 44px;
+  background-color: #794aff;
+  border: none;
+  color: #fff;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.Sub-Hero b {
+  color: #794aff;
+  font-size: 16px;
+}
+
+.Sub-Hero h1 {
+  font-size: 56px;
+}
+
+.Sub-Hero p {
+  font-size: 18px;
+  color: #777;
+}
+
+hr {
+  margin-top: 20px;
+  margin-left: 0px;
+  width: 50%;
+}
+
+.Nubi {
+  height: 500px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.sub-nubi-1 {
+  flex-basis: 30%;
+  height: 400px;
+  text-align: center;
+  position: relative;
+}
+
+.sub-nubi-2 {
+  flex-basis: 65%;
+  height: 400px;
+  position: relative;
+}
+
+.sub-nubi-1 b {
+  color: #794aff;
+  font-size: 16px;
+  position: absolute;
+  top: 45%;
+  left: 25%;
+}
+
+.sub-nubi-2 h1 {
+  position: absolute;
+  top: 10%;
+  left: 6%;
+}
+
+.Services {
+  width: 80%;
+  margin-left: 10%;
+  height: 1100px;
+  border: 1px solid;
+  background-color: #101828;
+  border-radius: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.Services h1{
+  font-size: 48px;
+}
+
+.Services p{
+  font-size: 20px;
+  color: #777;
+  line-height: 35px
+}
+
+.box{
+  width: 80%;
+  margin-left: 10%;
+  height: 750px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+  cursor: pointer;
+}
+
+.box1{
+  width: 447px;
+  height: 230px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.box1 img{
+  width: 100%;
+  height: 100%;
+}
+.box2{
+  width: 220px;
+  height: 230px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+.box4{
+  width: 220px;
+  height: 233px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+.box4 img{
+  width: 100%;
+  height: 100%;
+}
+
+.box2 img{
+  width: 100%;
+  height: 50%;
+  margin-top: 20px;
+}
+.box3{
+  width: 279px;
+  height: 485px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.box3 img{
+  width: 100%;
+  height: 90%;
+}
+.box5 img{
+  width: 100%;
+  height: 100%;
+}
+
+.box5{
+  width: 447px;
+  height: 233px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.box6{
+  width: 200px;
+  height: 200px;
+  border: 1px solid;
+  border-radius: 10px;
+}
+
+.box6 img{
+  width: 100%;
+  height: 50%;
+  margin-top: 20px;
+}
+
+.Team{
+  height: 600px;
+  margin-top: 100px;
+}
+
+.main-seo {
+  height: 600px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.sub-seo button {
+  width: 171px;
+  height: 47px;
+  background-color: #777;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  text-transform: uppercase;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.sub-seo h1{
+  font-size: 48px;
+}
+
+.sub-seo p{
+  color: #777;
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.sub-seo img{
+  width: 476px;
+  height: 406px;
+}
+
+
+.Footer {
+  width: 80%;
+  margin-left: 10%;
+  height: 250px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.sub-footer {
+  flex-basis: 23%;
+  height: 200px;
+}
+
+.sub-footer b {
+  font-size: 15px;
+  color: #374162;
+  padding-left: 20px;
+}
+
+.sub-footer p {
+  line-height: 40px;
+  padding-left: 20px;
+}
+
+.main img {
+  margin-left: 10%;
+  margin-top: 15px;
+}
+
+.main span{
+  margin-left: 20%;
+  color: #828282;
+}
+
+.main a{
+  color: #000;
+}
+
+#hr{
+  width: 80%;
+  margin-left: 10%;
+}
+
+#imhj{
+  width: 130px;
+  height: 32px;
+}
