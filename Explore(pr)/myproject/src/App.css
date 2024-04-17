@@ -1,0 +1,33 @@
+.main{
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+  
+}
+.child{
+  margin-top: 20px;
+  flex-basis: 33%;
+  height: 300px;
+  /* border: 1px solid gray; */
+  font-size: 10px;
+  padding: 10px;
+  transition: 1s;
+ 
+}
+.child:hover{
+  background-color: black;
+  color: white;
+  box-shadow: gray 0px 18px 50px -10px;
+}
+.child .img{
+  width: inherit;
+  height: 200px;
+  transition: 0.1s;
+}
+.child .img:hover{
+  transform: scale(1.05);
+ 
+}
