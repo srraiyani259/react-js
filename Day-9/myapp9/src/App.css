@@ -1,0 +1,43 @@
+.main{
+  width: 80%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+  
+}
+.child{
+  /* background-color: black; */
+  /* color: white;. */
+  margin-top: 30px;
+  flex-basis: 25%;
+  height: 350px;
+  /* border: 1px solid gray; */
+  font-size: 10px;
+  padding: 10px;
+  transition: 1s;
+ 
+}
+.child:hover{
+
+ /* background-color: gray; */
+ box-shadow: rgb(77, 77, 80) 0px 0px 0px 3px, rgb(10, 10, 10) 0px 0px 0px 6px, rgb(77, 77, 80) 0px 0px 0px 9px, rgb(10,10,10) 0px 0px 0px 12px, rgb(77,77,80) 0px 0px 0px 15px;
+}
+.child .img{
+  width: inherit;
+  height: 200px;
+  transition: 0.1s;
+}
+.child .img:hover{
+  transform: scale(1.05);
+ 
+}
+.child button{
+  padding: 3px;
+}
+.child button:hover{
+  background-color: rgb(44, 239, 44);
+  color: black;
+  box-shadow: 0 0 10px 0 rgba(0,0,0,0.45) inset;
+}
