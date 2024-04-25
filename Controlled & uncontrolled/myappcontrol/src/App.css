@@ -1,0 +1,23 @@
+input{
+  width: 300px;
+  &:focus{
+    outline:#373535;
+  }
+  &::placeholder{
+    color: #362b2b;
+  }
+  border-radius: 5px;
+
+}
+button{
+  margin: 5px;
+  width: 100px;
+  padding: 2px;
+  background-color: rgb(16, 225, 68);
+  border-radius: 10px;
+}
+button:hover{
+  background-color:darkblue;
+  color: white;
+  font-weight: bold;
+}
