@@ -1,0 +1,7 @@
+input{
+  width: 300px;
+  border-top: none;
+  border-left: 5px double black;
+  border-right: 5px double black;
+  border-bottom: 5px double black;
+}
