@@ -1,0 +1,103 @@
+*{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+.main{
+    /* background-color: white; */
+    margin: auto;
+    height: 735px;
+    width: 400px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+   background-color: antiquewhite;
+}
+
+input[type=email]{
+	padding: 15px;
+	width: 85%;
+	color: black;
+  margin-left: 30px;
+  border-radius: 5px;
+}
+
+input[type=username]{
+	padding: 15px;
+	width: 85%;
+	color:black;
+  margin-left: 30px;
+  border-radius: 5px;
+}
+
+input[type=text]{
+	padding: 15px;
+	width: 85%;
+	color:black;
+  margin-left: 30px;
+  border-radius: 5px;
+}
+
+input[type=text2]{
+	padding: 15px;
+	width: 85%;
+	color:black;
+  margin-left: 30px;
+  border-radius: 5px;
+}
+
+input[type=submit]{
+    padding: 15px;
+    width: 40%;
+    border: 0.5px solid white;
+    background-color: #dd1c1a;
+    color:black;
+    border-radius: 20px;
+    margin-left: 120px;
+}
+
+input[type=text3]{
+	padding: 15px;
+	width: 85%;
+	height: 150px;
+	color:black;
+  margin-left: 30px;
+  border-radius: 5px;
+}
+
+.but{
+    height: 40px;
+    width: 100px;
+    margin-left: 35%;
+    
+}
+
+.but:hover{
+    background-color: black;
+    color: white;
+    transition: 1.5s;
+}
+
+.text{
+    margin-top: 20px;
+    margin-right: 20px;
+    font-size: 25px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.helo{
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+justify-content: space-evenly;
+
+}
+.mp{
+  height: auto;
+  flex-basis: 100%;
+  border: 2px dotted black;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
