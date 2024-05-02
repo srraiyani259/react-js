@@ -8,7 +8,7 @@ function Footer() {
         &copy; Copyright <strong><span>iPortfolio</span></strong>
       </div>
       <div class="credits">
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        Designed by <a href="https://bootstrapmade.com/">Shreyas Raiyani</a>
       </div>
     </div>
   </footer>
