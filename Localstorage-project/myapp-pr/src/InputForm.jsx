@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './App.css'; // Import your CSS file
+import './App.css';
 
 function InputForm() {
   const [formData, setFormData] = useState({
@@ -22,24 +22,21 @@ function InputForm() {
 
     const newData = {
       ...formData,
-      id: Math.random().toString(36).substring(2, 15), // Generate unique ID
+      id: Math.random().toString(36).substring(2, 15),
     };
 
     setDataList([...dataList, newData]);
-    setFormData({ name: '', email: '', message: '' }); // Clear form after submission
+    setFormData({ name: '', email: '', message: '' }); 
 
-    // Store data in localStorage
     localStorage.setItem('userData', JSON.stringify(dataList));
   };
 
-  // Load data from localStorage on component mount
   useEffect(() => {
     const storedData = localStorage.getItem('userData');
     if (storedData) {
       setDataList(JSON.parse(storedData));
     }
-  }, []); // Empty dependency array to run only once on mount
-
+  }, []);
   return (
     <div className="container">
       <h1>Input Form</h1>
