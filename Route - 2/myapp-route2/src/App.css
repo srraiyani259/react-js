@@ -1,0 +1,47 @@
+
+.add-post-container {
+  margin-top: 50px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 50%;
+}
+
+.add-post-container h2 {
+  color: #333;
+}
+
+.add-post-container form {
+  margin-bottom: 20px;
+}
+
+.add-post-container input,
+.add-post-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.add-post-container button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.add-post-container button:hover {
+  background-color: #0056b3;
+}
+
+.add-post-container a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.add-post-container a:hover {
+  text-decoration: underline;
+}
