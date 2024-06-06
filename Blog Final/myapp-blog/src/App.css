@@ -1,0 +1,40 @@
+
+.App {
+    text-align: center;
+  }
+  .a1{
+    width: 500px;
+    height: 500px;
+    /* border: 1px solid black; */
+  } 
+  input{
+    width: 70%;
+    height: 30px;
+    border: 2px solid gray;
+    border-radius: 20px;
+  
+  }
+  label{
+    font-size: 20px;
+  }
+  textarea{
+    width: 70%;
+    border: 2px solid gray;
+    height: 70px;
+    border-radius: 20px;
+  
+  }
+  button{
+    width: 30%;
+    height: 40px;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 20px;
+  }
+  #b1{
+    width: 15%;
+    height: 30px;
+    border: 1px solid black;
+  }
+  
