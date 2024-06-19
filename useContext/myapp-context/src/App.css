@@ -1,0 +1,269 @@
+
+:root {
+  --background-light: #ffffff;
+  --background-dark: #121212;
+  --text-light: #000000;
+  --text-dark: #ffffff;
+}
+
+.App {
+  font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.App header, .App nav, .App main {
+  padding: 1rem;
+}
+
+.App.light-mode {
+  background-color: var(--background-light);
+  color: var(--text-light);
+}
+
+.App.dark-mode {
+  background-color: var(--background-dark);
+  color: var(--text-dark);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #282c34;
+  color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+header button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  color: #282c34;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+header button:hover {
+  background-color: #61dafb;
+  color: #282c34;
+}
+
+
+nav {
+  background-color: #333;
+  padding: 1rem 2rem;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+nav a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 1rem;
+  transition: color 0.3s, border-bottom 0.3s;
+}
+
+nav a:hover {
+  color: #61dafb;
+  border-bottom: 2px solid #61dafb;
+}
+
+nav a:active {
+  color: gray;
+  border-bottom: 2px solid
+}
+#about {
+  padding: 4rem 2rem;
+  /* background-color: #f4f4f9; */
+  color: #333;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  color: #444;
+}
+
+#about p {
+  font-size: 1.125rem;
+  line-height: 1.6;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #666;
+}
+
+@media (min-width: 768px) {
+  #about {
+    padding: 6rem 3rem;
+  }
+
+  #about h2 {
+    font-size: 2.5rem;
+  }
+
+  #about p {
+    font-size: 1.25rem;
+  }
+}
+  
+#projects {
+  padding: 4rem 2rem;
+  /* background-color: #f9f9f9; */
+  color: #333;
+  text-align: center;
+}
+
+#projects h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #444;
+}
+
+.project {
+  /* background-color: #ffffff; */
+  margin-bottom: 2rem;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #555;
+}
+
+.project p {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #666;
+}
+
+@media (min-width: 768px) {
+  #projects {
+    padding: 6rem 3rem;
+  }
+
+  #projects h2 {
+    font-size: 2.5rem;
+  }
+
+  .project {
+    margin-bottom: 3rem;
+    padding: 2rem;
+  }
+
+  .project h3 {
+    font-size: 1.75rem;
+  }
+
+  .project p {
+    font-size: 1.125rem;
+  }
+}
+
+#contact {
+  padding: 4rem 2rem;
+  /* background-color: #e9ecef; */
+  color: #333;
+  text-align: center;
+}
+
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #444;
+}
+
+#contact form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+#contact label {
+  font-size: 1rem;
+  color: #555;
+  text-align: left;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+#contact input, #contact textarea {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #333;
+}
+
+#contact textarea {
+  height: 150px;
+  resize: vertical;
+}
+
+#contact button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: gray;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#contact button:hover {
+  background-color: #0056b3;
+}
+
+@media (min-width: 768px) {
+  #contact {
+    padding: 6rem 3rem;
+  }
+
+  #contact h2 {
+    font-size: 2.5rem;
+  }
+
+  #contact form {
+    gap: 2rem;
+  }
+
+  #contact label {
+    font-size: 1.125rem;
+  }
+
+  #contact input, #contact textarea {
+    font-size: 1.125rem;
+  }
+
+  #contact button {
+    font-size: 1.125rem;
+  }
+}
