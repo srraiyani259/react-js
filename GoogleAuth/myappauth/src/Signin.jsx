@@ -2,6 +2,7 @@ import React,{useState , useEffect} from 'react'
 import { signInWithPopup } from "firebase/auth";
 import { auth , provider } from './Config';
 import Home from './Home';
+import { signOut } from 'firebase/auth'
 
 function Signin() {
 
@@ -17,6 +18,18 @@ function Signin() {
             console.log(error)
         })
     }
+
+    const handleSignout=()=>{
+        signOut(auth)
+        .then(()=>{
+            localStorage.removeItem("email",)
+            setValue('')
+        })
+        .catch((error)=>{
+            console.log(error)
+        })
+    }
+
     useEffect(()=>{
         
         let userEmail = localStorage.getItem("email")
@@ -26,11 +39,19 @@ function Signin() {
 
     },[])
 
-    return(
+    return (
         <div>
-            {value ? <Home/> : <button onClick={handleClick}>SignIn with Google</button>}
+          {value ? 
+          
+          <>
+          <h1>Welcome !{value.displayName}</h1>
+          <Home/>
+          <button onClick={handleSignout}>Sign Out</button>
+          <img src={value.photoURL}/>
+          </>
+          : <button onClick={handleClick}>SingIN With Google</button>}
         </div>
-    )
+      )
 
 }
 
