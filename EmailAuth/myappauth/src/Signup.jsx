@@ -52,6 +52,7 @@ const SignUp = () => {
           placeholder="Email"
           required
         />
+        <><br/><br/></>
         <input
           type="password"
           value={password}
@@ -59,6 +60,7 @@ const SignUp = () => {
           placeholder="Password"
           required
         />
+        <><br/><br/></>
         <button type="submit">Sign Up</button>
       </form>
       {error && <p>{error}</p>}
