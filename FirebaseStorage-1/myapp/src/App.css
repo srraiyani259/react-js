@@ -80,3 +80,13 @@ li {
   cursor: pointer;
   font-size: 16px;
 }
+
+.btn2{
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fd0000;
+  color: #fff;
+  cursor: pointer;
+  font-size: 16px;
+}

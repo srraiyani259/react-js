@@ -113,7 +113,7 @@ function Registration() {
             <input type='password' value={editPassword} onChange={(e) => setEditPassword(e.target.value)} />
             <br /><br />
             <input type='submit' value="Update" /><br/>
-            <button className='btn' onClick={() => setIsEditing(false)}>Cancel</button>
+            <button className='btn2' onClick={() => setIsEditing(false)}>Cancel</button>
           </form>
         </div>
       )}
