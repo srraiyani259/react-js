@@ -1,0 +1,40 @@
+.form-title{
+    padding-top: 50px;
+}
+
+form input{
+    width: 328px;
+    height: 47px;
+    background-color: #EEEEEE;
+    border: none;
+    outline: 0;
+    border-radius: 10px;
+    padding-left: 20px;
+    margin-top: 20px;
+}
+
+form button{
+    width: 328px;
+    height: 47px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 25px;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    font-size: 16px;
+} 
+
+.or{
+    width: 328px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 20px;
+    color: #AFAFAF;
+}
+
+.line{
+    flex-basis: 120px;
+    border: 1px solid;
+}

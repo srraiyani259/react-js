@@ -1,0 +1,295 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.uber-hero{
+    width: 100%;
+    height: 800px;
+    background-color: #000;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sub-hero-text{
+    flex-basis: 40%;
+    height: 697px;
+    color: #fff;
+    text-align: left;
+    padding-left: 100px;
+}
+
+.sub-hero-text h1{
+    font-size: 50px;
+    font-weight: 600;
+    padding-top: 150px;
+}
+
+.sub-hero-text p{
+    padding-top: 20px;
+}
+
+.input input{
+    width: 396px;
+    height: 47px;
+    border-radius: 8px;
+    border: none;
+    outline: 0;
+    margin-top: 20px;
+    padding-left: 30px;
+}
+
+.input button{
+    margin-top: 30px;
+    padding: 14px 25px;
+    border-radius: 8px;
+    font-weight: 800;
+    font-size: 16.5px;
+    cursor: pointer;
+    border: none;
+}
+
+.input-icon{
+    margin-left: -385px;
+    color: #000;
+    cursor: pointer;
+}
+
+.uber-hero-image{
+    flex-basis: 558px;
+    height: 660px;
+    background-image: url(../../components/assets/Ride-with-Uber.png);
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.uber-hero-2{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.uber-hero-2-image{
+    flex-basis: 558px;
+    height: 558px;
+    background-image: url(../../components/assets/earner-illustra.png);
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.uber-hero-2-text{
+    text-align: left;
+}
+
+.uber-hero-2-text h1{
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.uber-hero-2-text p{
+    line-height: 24px;
+    padding-top: 30px;
+    font-size: 16.5px;
+}
+
+.uber-hero-2-text button{
+    padding: 14px 35px;
+    margin-top: 30px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: .5s;
+    font-weight: 800;
+    font-size: 16.5px;
+}
+
+.uber-hero-2-text button:hover{
+    background-color: #353535;
+    transition: .5s;
+}
+
+.uber-hero-2-text a{
+    text-decoration: none;
+    color: #000;
+}
+
+.uber-hero-3{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.uber-hero-3-text{
+    text-align: left;
+}
+
+.uber-hero-3-text h1{
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.uber-hero-3-text p{
+    line-height: 24px;
+    padding-top: 30px;
+    font-size: 16.5px;
+}
+
+.uber-hero-3-text button{
+    padding: 14px 35px;
+    margin-top: 30px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: .5s;
+    font-weight: 800;
+    font-size: 16.5px;
+}
+
+.uber-hero-3-text button:hover{
+    background-color: #353535;
+    transition: .5s;
+}
+
+.uber-hero-3-text a{
+    text-decoration: none;
+    color: #000;
+}
+
+.uber-hero-3-image{
+    flex-basis: 558px;
+    height: 558px;
+    background-image: url(../../components/assets/u4b-square.png);
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.uber-hero-4{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.uber-hero-4-image{
+    flex-basis: 558px;
+    height: 558px;
+    background-image: url(../../components/assets/fleet-management.jpg);
+    border-radius: 10px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.uber-hero-4-text{
+    text-align: left;
+}
+
+.uber-hero-4-text h1{
+    font-size: 50px;
+    font-weight: 800;
+}
+
+.uber-hero-4-text p{
+    line-height: 24px;
+    padding-top: 30px;
+    font-size: 16.5px;
+}
+
+.uber-hero-4-text button{
+    padding: 14px 35px;
+    margin-top: 30px;
+    background-color: #000;
+    color: #fff;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    margin-right: 20px;
+    transition: .5s;
+    font-weight: 800;
+    font-size: 16.5px;
+}
+
+.uber-hero-4-text button:hover{
+    background-color: #353535;
+    transition: .5s;
+}
+
+.app{
+    width: 100%;
+    height: 400px;
+    background-color: #F6F6F6;
+    text-align: left;
+    padding-top: 50px;
+}
+
+.app h1{
+    font-size: 36px;
+    padding-left: 9%;
+    padding-bottom: 20px;
+}
+
+.app-qr{
+    width: 100%;
+    height: 198px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.sub-app-qr{
+    flex-basis: 558px;
+    height: 198px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.qr-image{
+    flex-basis: 150px;
+    height: 150px;
+    background-image: url(../../components/assets/Final-Download-Uber-App.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+}
+
+.qr-text{
+    flex-basis: 350px;
+    text-align: left;
+}
+
+.qr-text b{
+    font-size: 24px;
+}
+
+.qr-image1{
+    flex-basis: 150px;
+    height: 150px;
+    background-image: url(../../components/assets/QR_https___t.uber.com_download-driver-app.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+}

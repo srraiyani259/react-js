@@ -1,0 +1,135 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.download-app {
+  width: 100%;
+  height: 750px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.sub-app-text {
+  text-align: left;
+}
+
+.sub-app-text h1 {
+  font-size: 52px;
+  color: #333;
+}
+
+.sub-app-text p {
+  line-height: 25px;
+  padding-top: 25px;
+}
+
+.buttons{
+    margin-top: 25px;
+}
+.google-play {
+  padding: 14px 25px;
+  border: none;
+  background-color: #000;
+  color: #fff;
+  font-size: 16.5px;
+  font-weight: 700;
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.google-play:hover {
+  background-color: #353535;
+  transition: 0.5s;
+}
+
+.apple-store {
+  padding: 14px 25px;
+  border: none;
+  background-color: #eeeeee;
+  color: #000;
+  font-size: 16.5px;
+  font-weight: 700;
+  border-radius: 10px;
+  transition: 0.5s;
+  cursor: pointer;
+  margin-top: 13px;
+}
+
+.apple-store:hover {
+  background-color: #E2E2E2;
+}
+
+.sub-app-image {
+  flex-basis: 558px;
+  height: 697px;
+  background-image: url(../../components/assets/Rider-Viewing-App.svg);
+  background-position: center;
+  background-size: cover;
+}
+
+.uber-hero-app{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.uber-hero-image-app{
+    flex-basis: 558px;
+    height: 372px;
+    background-image: url(../../components/assets/CoastalCA_Final_EmailDesktop_700x394.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.sub-hero-text-app{
+    flex-basis: 40%;
+    height: 697px;
+    text-align: left;
+    padding-left: 100px;
+}
+
+.sub-hero-text-app h1{
+    font-size: 50px;
+    font-weight: 600;
+    padding-top: 150px;
+}
+
+.sub-hero-text-app p{
+    padding-top: 20px;
+}
+
+.input-app input{
+    width: 396px;
+    height: 47px;
+    border-radius: 8px;
+    border: none;
+    outline: 0;
+    margin-top: 20px;
+    padding-left: 30px;
+    background-color: #F3F3F3;
+}
+
+.input-app button{
+    margin-top: 30px;
+    padding: 14px 25px;
+    border-radius: 8px;
+    font-weight: 800;
+    font-size: 16.5px;
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+
+.input-icon{
+    margin-left: -385px;
+    color: #000;
+    cursor: pointer;
+}
