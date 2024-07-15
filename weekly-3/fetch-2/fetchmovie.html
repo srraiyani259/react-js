@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title> 1 </title>
+    <link rel="stylesheet" href="css/style.css">
+	
+</head>
+<body>
+	  <!-- 6f5a7192 -->
+	<header>
+		<nav>
+			<div class="logo">
+				<img src="img/logo.png">
+			</div>
+			<div class="navbar">
+				<div class="lang">
+					<select id="select">
+						<option style="color:#000">ENGLISH</option>
+						<option style="color:#000">HINDI</option>
+					</select>
+				</div>
+				<div class="btn">
+					<button id="btn-1">SIGN IN</button>
+				</div>
+			</div>
+		</nav>
+		<div class="search">
+			<input type="text" placeholder="Search Movie" id="inp">
+			<button id="btn-2" onclick="fatchdata()">SEARCH</button>
+		</div>
+		<div class="image">
+			
+		</div>
+	</header>
+</body>
+</html>
+<script>
+	
+	function fatchdata()
+	{
+		let name = document.getElementById("inp").value
+		let Api = "6f5a7192"
+		fetch(`http://www.omdbapi.com/?apikey=${Api}&t=${name}`)
+		.then(function(res){
+			return res.json()
+		})
+		.then(function(json){
+			console.log(json)
+			displayMovie(json)
+		})
+	}
+
+	function displayMovie(json)
+	{
+		let image = document.createElement("img")
+		image.setAttribute("src",json.Poster)
+
+		let title = document.createElement("h1")
+		title.innerHTML = json.Title
+
+		let actor = document.createElement("h3")
+		actor.innerHTML = json.Actors
+
+
+		document.querySelector(".image").append(image,title,actor)
+	}
+
+</script>
