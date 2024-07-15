@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart Page</title>
+    <link rel="stylesheet" href="https://fakestoreapi.com/products">
+</head>
+<body>
+    <center>
+        <h1 id="heading">TENET ENTERPRISE</h1>
+    </center>
+        <div id="cartmain">
+        <div id="cart">
+            
+        </div>
+    </div>
+</body>
+</html>
+
+<script>
+
+    let Products = JSON.parse(localStorage.getItem("cart")) || []
+
+    function DisplayCart () {
+        Products.map((el)=>{
+            let div = document.createElement("div")
+            div.setAttribute("id","cartdiv");
+
+            let pic = document.createElement("img")
+            pic.setAttribute("id","cartimg")
+            pic.setAttribute("src",el.Image)
+
+            let title = document.createElement("h3")
+            title.innerText = el.Title
+
+            let Price = document.createElement("h4")
+            Price.innerText = el.Price
+
+            let  removeBtn = document.createElement("button")
+            removeBtn.innerHTML = "Delete"
+
+            removeBtn.addEventListener("click",(()=>{
+                Products.splice(Products.indexOf(el),1);
+                localStorage.setItem("cart",JSON.stringify(Products))
+                location.reload()
+            }))
+
+            div.append(pic,title,Price,removeBtn) 
+            document.getElementById("cart").append(div)
+            document.getElementById("cartmain").append(div)
+        })
+
+            
+
+      }
+      DisplayCart()
+
+</script>
+
+<style>
+
+   #cartmain {
+    display: grid; 
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    row-gap: 20px;
+    column-gap: 5px;
+    margin-top: 200px;
+     /* display: flex;
+    align-items: center;
+    justify-content: center;  */
+    /* border: 1px solid #000; */
+   }
+
+    #cartdiv{
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        border-radius: 20px 20px 20px 20px;
+        box-shadow: 0px 0px 8px black;
+    }
+    #cartimg{
+        width: 200px;
+        height: 200px;
+    }
+    #heading{
+        font-size: 45px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-shadow: 2px 2px 6px brown;
+        border: 2px solid black;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        transition: 0.7s;
+    }
+    #heading:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: 0.7s;
+    }
+</style>

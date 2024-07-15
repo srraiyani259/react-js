@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="https://fakestoreapi.com/products">
+</head>
+<body>
+    <center>
+        <h1 id="heading">TENET ENTERPRISE</h1>
+    </center>
+
+    <select name="" id="sort-select">
+
+        <option value="high">Price High To Low</option>
+        <option value="low">Price Low To High</option>
+        <option value="az">A - Z</option>
+        <option value="za">Z - A</option>
+
+    </select>
+
+    <div id="cart"></div>
+
+    <center>
+    <div id="main"></div> 
+    </center>  
+</body>
+</html>
+
+<script>
+    let Data = [
+
+    {
+        id : 1,
+        Title : "Fjallraven - Foldsack No. 1 Backpack, Fits 15 Laptops",
+        Price : 109.95,
+        Image : "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg"
+    },
+    {
+        id: 2,
+        Title : "Mens Casual Premium Slim Fit T-Shirts ",
+        Price : 22.3,
+        Image : "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg"
+    },
+    {
+        id: 3,
+        Title : "Mens Cotton Jacket",
+        Price : 55.99,
+        Image : "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg"
+    },
+    {
+        id : 4,
+        Title : "Mens Casual Slim Fit",
+        Price : 15.99,
+        Image : "https://fakestoreapi.com/img/71YXzeOuslL._AC_UY879_.jpg"
+    },
+    {
+        id : 5,
+        Title : "John Hardy Women's Legends Naga Gold & Silver Dragon Station Chain Bracelet",
+        Price : 695,
+        Image : "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg"
+    },
+    {
+        id : 6,
+        Title : "Solid Gold Petite Micropave ",
+        Price : 168,
+        Image : "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg"
+    },
+    {
+        id : 7,
+        Title : "White Gold Plated Princess",
+        Price : 9.99,
+        Image : "https://fakestoreapi.com/img/71YAIFU48IL._AC_UL640_QL65_ML3_.jpg"
+    },
+    {
+        id : 8,
+        Title : "Pierced Owl Rose Gold Plated Stainless Steel Double",
+        Price : 10.99,
+        Image : "https://fakestoreapi.com/img/51UDEzMJVpL._AC_UL640_QL65_ML3_.jpg"
+    },
+    {
+        id : 9,
+        Title : "WD 2TB Elements Portable External Hard Drive - USB 3.0 ",
+        Price : 64,
+        Image : "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg"
+    },
+    {
+        id : 10,
+        Title : "SanDisk SSD PLUS 1TB Internal SSD - SATA III 6 Gb/s",
+        Price : 109,
+        Image : "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg"
+    }
+    ]
+
+    let cartbtn = document.createElement("button")
+    cartbtn.setAttribute("id","cartbtn")
+
+    cartbtn.innerHTML = "CART"
+
+    document.getElementById("cart").append(cartbtn)
+
+    cartbtn.addEventListener("click",()=>{
+        window.open("Cart.html")
+    })
+
+    function Display(Data){
+    document.getElementById("main").innerHTML = ""
+        Data.map((El,i)=>{
+            let div = document.createElement('div');
+            div.setAttribute("id","item");
+            let pic = document.createElement("img");
+            pic.setAttribute("src",El.Image);
+            pic.setAttribute("id","photo");
+
+            let Name = document.createElement("h3");
+            Name.innerText = El.Title;
+
+            let PR = document.createElement("h2");
+            PR.innerText = "$ "+El.Price
+
+            let btn = document.createElement("button");
+            btn.setAttribute("class","btn")
+            btn.innerText = "Add To Cart"
+
+            btn.addEventListener("click",function(){
+                Addtocart(i)
+         });
+
+
+            div.append(pic,Name,PR,btn)
+            document.querySelector("#main").append(div)
+        })
+    }
+
+    
+
+
+    Display(Data)
+
+    let sortselect = document.getElementById("sort-select")
+    sortselect.addEventListener("change",()=>{
+
+        let selected = sortselect.value 
+        let selectedvalue = []
+
+        if(selected === "low"){
+            selectedvalue= Data.slice().sort((a, b) => a.Price - b.Price)
+        }
+        else if(selected === "high"){
+            selectedvalue = Data.slice().sort((a,b) => b.Price - a.Price)
+        }
+        else if(selected === "az"){
+            selectedvalue = Data.slice().sort((a,b) => a.Title.localeCompare(b.Title))
+        }
+        else if(selected === "za"){
+            selectedvalue = Data.slice().sort((a,b) => b.Title.localeCompare(a.Title))
+        }
+
+        Display(selectedvalue)
+
+    })
+
+    function Addtocart(index){
+        let Product = Data.filter((Index,i)=>{
+            return i === index
+        })
+
+        let Products = JSON.parse(localStorage.getItem("cart")) || []
+        Products.push(Product[0])
+        localStorage.setItem("cart",JSON.stringify(Products))
+    }
+
+</script>
+
+<style>
+
+    #photo{
+        width: 200px;
+        height: 200px;
+        /* border: 1px solid #000; */
+        transition: 0.7s;
+    }
+    #photo:hover{
+        transform: scale(85%);
+        transition: 0.7s;
+    }
+    #item{
+        border: 2px solid #000;
+        box-shadow: 0px 0px 8px black;
+        border-radius: 20px 20px 20px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        
+    }
+    .btn {
+        height: 35px;
+        width: 95px;
+        background-color: black;
+        color: white;
+        border-radius: 18px;
+        transition: 0.7s;
+    }
+    .btn:hover{
+        color: black;
+        background-color: white;
+        transition: 0.7s;
+    }
+    #main{
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        row-gap: 30px;
+        column-gap: 15px;
+        
+    }
+    body{
+        position: relative;
+    }
+    #sort-select{
+        position: absolute;
+        top: 0px;
+        height: 40px;
+        width: 150px;
+        border-radius: 18px;
+        background-color: rgb(73, 112, 85);
+        color: white;
+        box-shadow: 1px 3px 5px 1px black;
+    }
+    #heading{
+        font-size: 45px;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        text-shadow: 2px 2px 6px brown;
+        border: 2px solid black;
+        border-top: 0;
+        border-left: 0;
+        border-right: 0;
+        transition: 0.7s;
+    }
+    #heading:hover{
+        cursor: pointer;
+        transform: scale(1.1);
+        transition: 0.7s;
+    }
+    #cartbtn {
+        height: 25px;
+        width: 60px;
+        border-radius: 20px;
+        background-color: black;
+        color: blanchedalmond;
+    }
+    #cartbtn:hover{
+        background-color: darkred;
+    }
+</style>
