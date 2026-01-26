@@ -93,7 +93,6 @@ let stored=JSON.parse(localStorage.getItem("user")) || []
 
   })
 
- 
   function display()
   {
   
@@ -115,11 +114,6 @@ let stored=JSON.parse(localStorage.getItem("user")) || []
      record.innerHTML=a
    
   }
-   
-
-    
-
-
 
   function editinfo(id)
   {
@@ -142,8 +136,6 @@ let stored=JSON.parse(localStorage.getItem("user")) || []
   function del(id)
   {
     stored.splice(id,1)
-
-    // JSON.parse(localStorage.getItem("user")) || []
 
     localStorage.setItem("user",JSON.stringify(stored))
     display()
